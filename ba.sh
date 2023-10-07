@@ -34,22 +34,28 @@ sleep 0.1
 echo "           █████        ██████████    "
 sleep 0.5
 echo "          ░░░░░        ░░░░░░░░░░   "
-echo "Recueda !!!!:
-    que al hacer esto Se reiniciara termux y perderas todos tus datos es fabirable hacer esto cuando recien te descargaste termux
-"
+
 while true; do
     
     echo "Selecciona una opción:"
-    echo "1. IG"
+    echo "1. requirimientos y poner la ruta del archivo"
     echo "2. eliminar el baner por defecto de Termux"
-    echo "3. Insertar una imagen como baner"
+    echo "3. run"
     echo "4. Salir"
     
     read opcion
     
     case $opcion in
-        1)
+        1)  
+            apt update
+            apt upgrade
+            pkg update
+            pkg upgrade
             apt install python
+            apt install python2
+            apt install python3
+            pkg install python-pillow
+            pip intall pillow
             pip install ascii-wizard
             echo "Has seleccionado la Opción 1."
 
@@ -119,7 +125,7 @@ while true; do
             else
                 # Si el archivo no existe, crearlo con el contenido
                 echo "$iscript" > "$ruta_archivo"
-                echo "Se creó el archivo $archivo con el contenido inicial."
+                echo "Se creó el archivo $archivo con el contenido inicial. GAAAAAAAAAAA"
             fi
         ;;
         
