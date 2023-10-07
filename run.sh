@@ -69,12 +69,10 @@ while true; do
             read imagen
 
             # Contenido que deseas agregar al archivo
-            contenido="
-            import ascii_wizard
-            import os
-            img = ascii_wizard.AsciiWizard(\"$imagen\")
-            img.colored(50, 2.2, None, None, True)
-            "
+contenido="import ascii_wizard
+import os
+img = ascii_wizard.AsciiWizard(\"$imagen\")
+img.colored(50, 2.2, None, None, True)"
 
             # Verificar si el archivo ya existe
             if [ -f "$ruta_archivo" ]; then
