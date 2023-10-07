@@ -55,7 +55,7 @@ while true; do
             apt install python2
             apt install python3
             pkg install python-pillow
-            pip intall pillow
+            pip install pillow
             pip install ascii-wizard
             echo "Has seleccionado la Opción 1."
 
