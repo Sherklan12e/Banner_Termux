@@ -105,6 +105,8 @@ img.colored(50, 2.2, None, None, True)"
             sleep 0.2
             cd $HOME
             touch .hushlogin
+            cd $HOME
+            rm -rf .bashrc
             echo -e "\e[34mSe elimino El Banner\e[0m"
             
         ;;
