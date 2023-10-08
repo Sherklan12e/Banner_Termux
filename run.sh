@@ -65,7 +65,7 @@ while true; do
             # Ruta completa del archivo
             ruta_archivo="$HOME/$archivo"
 
-            echo "Escribe la ruta de la imagen"
+            echo -e "\e[31mEscribe o pega la RUTA DE LA IMAGEN <3\e[0m"
             read imagen
 
             # Contenido que deseas agregar al archivo
